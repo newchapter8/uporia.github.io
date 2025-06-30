@@ -6,54 +6,84 @@
   <title>Devino Mentor – Uporia</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       background-color: #f4f4f4;
     }
+
     header {
       background-color: #222;
-      padding: 20px;
+      padding: 15px 0;
       text-align: center;
     }
+
     nav a {
       color: white;
-      margin: 0 15px;
+      margin: 0 20px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 16px;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
     section {
       padding: 60px 20px;
       text-align: center;
     }
+
     h2 {
       font-size: 32px;
       margin-bottom: 20px;
+      color: #222;
     }
+
     p {
       font-size: 18px;
       max-width: 700px;
       margin: 0 auto 40px;
+      line-height: 1.6;
     }
+
     iframe {
-      max-width: 800px;
+      max-width: 100%;
       width: 100%;
       height: 900px;
       border: none;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
     }
+
     .btn-back {
       display: inline-block;
+      margin-top: 40px;
       padding: 12px 25px;
       background-color: #4CAF50;
       color: white;
       text-decoration: none;
-      border-radius: 6px;
-      margin-top: 40px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
     }
+
     .btn-back:hover {
-      background-color: #45a049;
+      background-color: #388e3c;
+    }
+
+    @media (max-width: 600px) {
+      h2 {
+        font-size: 26px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .btn-back {
+        width: 90%;
+      }
     }
   </style>
 </head>
@@ -69,18 +99,17 @@
   </header>
 
   <!-- Secțiunea principală -->
-  <section id="devino-mentor">
+  <section>
     <h2>Devino Mentor în comunitatea Uporia</h2>
     <p>
       Împărtășește-ți cunoștințele, inspiră alți tineri și fii parte dintr-o rețea educațională cu impact real.<br/>
       <strong>Aplică acum și fii vocea unei noi generații.</strong>
     </p>
 
-    <!-- Embed Formular Google -->
+    <!-- Formular Google -->
     <iframe 
       src="https://docs.google.com/forms/d/e/1FAIpQLSdZqF0XRKxYTDvtaHtQCWRLALlyabPaTZHMggf-JUcmT1YrWQ/viewform?embedded=true" 
       allowfullscreen>
-      Se încarcă…
     </iframe>
 
     <!-- Buton Înapoi -->
