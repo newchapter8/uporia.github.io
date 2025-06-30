@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Devino Mentor - Uporia</title>
+  <title>Devino Mentor | Uporia</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      margin: 0;
       background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
       color: #111;
     }
     header {
@@ -26,39 +27,39 @@
       font-weight: 500;
     }
     .container {
-      max-width: 700px;
-      margin: 40px auto;
+      max-width: 800px;
+      margin: 50px auto;
       background: white;
-      padding: 30px;
+      padding: 40px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h1 {
       text-align: center;
     }
-    label {
-      display: block;
-      margin-top: 20px;
-      font-weight: bold;
+    h1 {
+      margin-bottom: 20px;
     }
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+    p {
+      font-size: 16px;
+      line-height: 1.6;
     }
-    button {
-      margin-top: 20px;
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
       background-color: #0b1e36;
       color: white;
-      padding: 12px 25px;
-      border: none;
+      text-decoration: none;
       border-radius: 5px;
-      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
     }
-    button:hover {
-      background-color: #1798aa;
+    .footer {
+      background-color: #0b1e36;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -68,33 +69,23 @@
   <h1>Uporia</h1>
   <nav>
     <a href="index.html">Acasă</a>
+    <a href="despre.html">Despre</a>
+    <a href="mentori.html">Mentori</a>
     <a href="devino-mentor.html">Devino Mentor</a>
+    <a href="inregistrare.html">Înregistrare</a>
+    <a href="login.html">Login</a>
   </nav>
 </header>
 
 <div class="container">
   <h1>Devino Mentor</h1>
-  <p>Completează formularul de mai jos pentru a aplica ca mentor în comunitatea Uporia.</p>
-
-  <form>
-    <label for="nume">Nume complet</label>
-    <input type="text" id="nume" name="nume" placeholder="Ex: Ana Ionescu">
-
-    <label for="domeniu">Domeniu de expertiză</label>
-    <input type="text" id="domeniu" name="domeniu" placeholder="Ex: Programare, Design, Engleză">
-
-    <label for="email">Adresă de email</label>
-    <input type="email" id="email" name="email" placeholder="Ex: exemplu@email.com">
-
-    <label for="descriere">Scurtă descriere</label>
-    <textarea id="descriere" name="descriere" rows="5" placeholder="Scrie câteva cuvinte despre tine și cum vrei să ajuți."></textarea>
-
-    <label for="portofoliu">Link portofoliu / profil (opțional)</label>
-    <input type="text" id="portofoliu" name="portofoliu" placeholder="Ex: LinkedIn, website personal">
-
-    <button type="submit">Trimite aplicația</button>
-  </form>
+  <p>Împărtășește-ți cunoștințele și ajută alți oameni să evolueze. Completează formularul pentru a aplica ca mentor în comunitatea Uporia.</p>
+  <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdZqF0XRKxYTDvtaHtQCWRLALlyabPaTZHMggf-JUcmT1YrWQ/viewform?usp=sf_link" target="_blank">Completează Formularul</a>
 </div>
+
+<footer class="footer">
+  &copy; 2025 Uporia. Toate drepturile rezervate.
+</footer>
 
 </body>
 </html>
