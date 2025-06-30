@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mentori | Uporia</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #111;
+    }
+    header {
+      background-color: #0b1e36;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    .card {
+      background-color: white;
+      width: 280px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+    .card p {
+      margin: 0;
+      font-size: 14px;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 8px 15px;
+      background-color: #0b1e36;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .footer {
+      background-color: #0b1e36;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Uporia</h1>
+  <nav>
+    <a href="index.html">Acasă</a>
+    <a href="despre.html">Despre</a>
+    <a href="mentori.html">Mentori</a>
+    <a href="devino-mentor.html">Devino Mentor</a>
+    <a href="inregistrare.html">Înregistrare</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h1>Mentori disponibili</h1>
+  <div class="cards">
+    <div class="card">
+      <img src="https://i.imgur.com/8Km9tLL.jpg" alt="Ion Popescu" />
+      <h3>Ion Popescu</h3>
+      <p>Programare Web</p>
+      <a href="mentor-ion-popescu.html">Vezi profilul</a>
+    </div>
+    <!-- Poți adăuga aici alți mentori în viitor -->
+  </div>
+</div>
+
+<footer class="footer">
+  &copy; 2025 Uporia. Toate drepturile rezervate.
+</footer>
+
+</body>
+</html>
