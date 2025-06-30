@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Devino Mentor – Uporia</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
       background-color: #f4f4f4;
+    }
+    header {
+      background-color: #222;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     section {
       padding: 60px 20px;
@@ -30,22 +43,50 @@
       height: 900px;
       border: none;
     }
+    .btn-back {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 40px;
+    }
+    .btn-back:hover {
+      background-color: #45a049;
+    }
   </style>
 </head>
 <body>
 
+  <!-- Meniu sus -->
+  <header>
+    <nav>
+      <a href="index.html">Acasă</a>
+      <a href="mentori.html">Mentori</a>
+      <a href="devino-mentor.html" style="color: #4CAF50;">Devino Mentor</a>
+    </nav>
+  </header>
+
+  <!-- Secțiunea principală -->
   <section id="devino-mentor">
     <h2>Devino Mentor în comunitatea Uporia</h2>
     <p>
-      Împărtășește-ți cunoștințele, inspiră alți tineri și fii parte dintr-o rețea educațională cu impact real.<br>
+      Împărtășește-ți cunoștințele, inspiră alți tineri și fii parte dintr-o rețea educațională cu impact real.<br/>
       <strong>Aplică acum și fii vocea unei noi generații.</strong>
     </p>
 
+    <!-- Embed Formular Google -->
     <iframe 
       src="https://docs.google.com/forms/d/e/1FAIpQLSdZqF0XRKxYTDvtaHtQCWRLALlyabPaTZHMggf-JUcmT1YrWQ/viewform?embedded=true" 
       allowfullscreen>
       Se încarcă…
     </iframe>
+
+    <!-- Buton Înapoi -->
+    <div>
+      <a href="index.html" class="btn-back">⬅ Înapoi la pagina principală</a>
+    </div>
   </section>
 
 </body>
