@@ -7,58 +7,57 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
       margin: 0;
       padding: 0;
+      background: #f9f9f9;
       color: #111;
     }
+
     header {
       background-color: #0b1e36;
       color: white;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      padding: 30px 20px;
+      text-align: center;
     }
+
+    nav {
+      margin-top: 10px;
+    }
+
     nav a {
       color: white;
-      margin-left: 20px;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: 500;
     }
+
     .container {
       max-width: 800px;
       margin: 50px auto;
       background: white;
       padding: 40px;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
       text-align: center;
     }
-    h1 {
+
+    h2 {
       margin-bottom: 20px;
     }
-    p {
-      font-size: 16px;
-      line-height: 1.6;
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 10px;
     }
-    .button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 25px;
-      background-color: #0b1e36;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      font-size: 16px;
-    }
-    .footer {
-      background-color: #0b1e36;
+
+    footer {
+      background: #0b1e36;
       color: white;
       text-align: center;
-      padding: 20px;
-      margin-top: 50px;
+      padding: 30px 20px;
+      margin-top: 60px;
       font-size: 14px;
     }
   </style>
@@ -72,19 +71,21 @@
     <a href="despre.html">Despre</a>
     <a href="mentori.html">Mentori</a>
     <a href="devino-mentor.html">Devino Mentor</a>
+    <a href="aplica-elev.html">Aplică Elev</a>
     <a href="inregistrare.html">Înregistrare</a>
     <a href="login.html">Login</a>
   </nav>
 </header>
 
 <div class="container">
-  <h1>Devino Mentor</h1>
-  <p>Împărtășește-ți cunoștințele și ajută alți oameni să evolueze. Completează formularul pentru a aplica ca mentor în comunitatea Uporia.</p>
-  <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdZqF0XRKxYTDvtaHtQCWRLALlyabPaTZHMggf-JUcmT1YrWQ/viewform?usp=sf_link" target="_blank">Completează Formularul</a>
+  <h2>Devino Mentor în comunitatea Uporia</h2>
+  <p>Completează formularul de mai jos pentru a aplica.</p>
+  <br />
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdZqF0XRKxYTDvtaHtQCWRLALlyabPaTZHMggf-JUcmT1YrWQ/viewform?embedded=true">Se încarcă...</iframe>
 </div>
 
-<footer class="footer">
-  &copy; 2025 Uporia. Toate drepturile rezervate.
+<footer>
+  &copy; 2025 Uporia. Construit cu pasiune și dedicare. Toate drepturile rezervate.
 </footer>
 
 </body>
