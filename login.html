@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login - Uporia</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #0b1e36;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .container {
+      max-width: 400px;
+      background: white;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 25px;
+      background-color: #0b1e36;
+      color: white;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1798aa;
+    }
+    .link {
+      text-align: center;
+      margin-top: 15px;
+    }
+    .link a {
+      color: #0b1e36;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Uporia</h1>
+  <nav>
+    <a href="index.html">Acasă</a>
+    <a href="devino-mentor.html">Devino Mentor</a>
+    <a href="inregistrare.html">Înregistrare</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h1>Autentificare</h1>
+  <form>
+    <label for="email">Adresă de email</label>
+    <input type="email" id="email" name="email" placeholder="Ex: exemplu@email.com">
+
+    <label for="parola">Parolă</label>
+    <input type="password" id="parola" name="parola" placeholder="••••••••">
+
+    <button type="submit">Autentifică-te</button>
+  </form>
+
+  <div class="link">
+    <p>Nu ai cont? <a href="inregistrare.html">Crează unul</a></p>
+  </div>
+</div>
+
+</body>
+</html>
