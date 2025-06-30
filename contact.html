@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Uporia</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #111;
+    }
+
+    header {
+      background-color: #0b1e36;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 60px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.06);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      height: 150px;
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 25px;
+      width: 100%;
+      padding: 12px;
+      background-color: #0b1e36;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #16375f;
+    }
+
+    footer {
+      background: #0b1e36;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Uporia</h1>
+  <nav>
+    <a href="index.html">Acasă</a>
+    <a href="despre.html">Despre</a>
+    <a href="mentori.html">Mentori</a>
+    <a href="devino-mentor.html">Devino Mentor</a>
+    <a href="aplica-elev.html">Aplică Elev</a>
+    <a href="inregistrare.html">Înregistrare</a>
+    <a href="login.html">Login</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>Contactează echipa Uporia</h2>
+  <form>
+    <label for="nume">Nume</label>
+    <input type="text" id="nume" name="nume" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="mesaj">Mesaj</label>
+    <textarea id="mesaj" name="mesaj" required></textarea>
+
+    <button type="submit">Trimite mesajul</button>
+  </form>
+</div>
+
+<footer>
+  &copy; 2025 Uporia. Construit cu pasiune și dedicare. Toate drepturile rezervate.
+</footer>
+
+</body>
+</html>
