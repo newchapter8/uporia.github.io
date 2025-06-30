@@ -1,89 +1,113 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mentori | Uporia</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
       margin: 0;
       padding: 0;
+      background: #f9f9f9;
       color: #111;
     }
+
     header {
       background-color: #0b1e36;
       color: white;
-      padding: 20px;
+      padding: 30px 20px;
       text-align: center;
     }
+
     nav {
       margin-top: 10px;
     }
+
     nav a {
       color: white;
       margin: 0 15px;
       text-decoration: none;
       font-weight: 500;
     }
+
     .container {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
     }
-    h1 {
+
+    h2 {
       text-align: center;
       margin-bottom: 40px;
     }
-    .mentors-grid {
+
+    .mentori-grid {
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
       justify-content: center;
     }
+
     .mentor-card {
-      background: #f9f9f9;
-      border: 1px solid #ddd;
-      padding: 20px;
+      background: white;
       border-radius: 10px;
-      width: 260px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.06);
+      padding: 25px;
+      width: 300px;
       text-align: center;
-      box-shadow: 0 0 6px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
     }
+
+    .mentor-card:hover {
+      transform: scale(1.03);
+    }
+
     .mentor-card h3 {
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
+
     .mentor-card p {
-      margin-top: 0;
-      color: #555;
+      color: #444;
+      font-size: 15px;
     }
+
     .mentor-card a {
       display: inline-block;
       margin-top: 15px;
+      padding: 10px 20px;
+      background: #0b1e36;
+      color: white;
       text-decoration: none;
-      color: #0b1e36;
-      font-weight: bold;
+      border-radius: 6px;
+      font-size: 14px;
     }
+
     footer {
-      background-color: #0b1e36;
+      background: #0b1e36;
       color: white;
       text-align: center;
-      padding: 20px;
-      margin-top: 50px;
+      padding: 30px 20px;
+      margin-top: 60px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .mentori-grid {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Mentori Uporia</h1>
+  <h1>Uporia</h1>
   <nav>
     <a href="index.html">Acasă</a>
     <a href="despre.html">Despre</a>
+    <a href="mentori.html">Mentori</a>
     <a href="devino-mentor.html">Devino Mentor</a>
     <a href="aplica-elev.html">Aplică Elev</a>
     <a href="inregistrare.html">Înregistrare</a>
@@ -92,23 +116,31 @@
 </header>
 
 <div class="container">
-  <h1>Mentorii Noștri</h1>
-  <div class="mentors-grid">
-    <div class="mentor-card">
-      <h3>Ion Popescu</h3>
-      <p>Educație Financiară</p>
-      <a href="mentor-ion-popescu.html">Vezi profilul →</a>
-    </div>
+  <h2>Mentori activi în Uporia</h2>
+
+  <div class="mentori-grid">
     <div class="mentor-card">
       <h3>Maria Ionescu</h3>
-      <p>Dezvoltare Personală</p>
-      <a href="mentor-maria-ionescu.html">Vezi profilul →</a>
+      <p>Coach de dezvoltare personală cu peste 10 ani de experiență în ghidarea oamenilor spre o versiune mai bună a lor.</p>
+      <a href="mentor-maria-ionescu.html">Vezi profilul</a>
+    </div>
+
+    <div class="mentor-card">
+      <h3>Alex Dima</h3>
+      <p>Antreprenor & speaker. Îți oferă perspective practice despre business, mindset și creștere personală.</p>
+      <a href="#">Vezi profilul</a>
+    </div>
+
+    <div class="mentor-card">
+      <h3>Raluca Stan</h3>
+      <p>Psiholog și trainer specializat pe comunicare eficientă și inteligență emoțională. Oferă mentorat 1-la-1.</p>
+      <a href="#">Vezi profilul</a>
     </div>
   </div>
 </div>
 
 <footer>
-  &copy; 2025 Uporia. Toate drepturile rezervate.
+  &copy; 2025 Uporia. Construit cu pasiune și dedicare. Toate drepturile rezervate.
 </footer>
 
 </body>
