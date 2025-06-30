@@ -3,73 +3,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Login - Uporia</title>
+  <title>Autentificare | Uporia</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
       margin: 0;
       padding: 0;
+      background: #f9f9f9;
+      color: #111;
     }
+
     header {
       background-color: #0b1e36;
       color: white;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      padding: 30px 20px;
+      text-align: center;
     }
+
+    nav {
+      margin-top: 10px;
+    }
+
     nav a {
       color: white;
-      margin-left: 20px;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: 500;
     }
+
     .container {
-      max-width: 400px;
+      max-width: 500px;
+      margin: 60px auto;
       background: white;
-      margin: 40px auto;
-      padding: 30px;
+      padding: 40px;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
-    h1 {
+
+    h2 {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
+
     label {
       display: block;
       margin-top: 15px;
       font-weight: bold;
     }
-    input {
+
+    input[type="email"],
+    input[type="password"] {
       width: 100%;
-      padding: 10px;
+      padding: 12px;
       margin-top: 5px;
       border: 1px solid #ccc;
-      border-radius: 5px;
+      border-radius: 6px;
+      box-sizing: border-box;
     }
+
     button {
       margin-top: 25px;
+      width: 100%;
+      padding: 12px;
       background-color: #0b1e36;
       color: white;
-      padding: 12px;
-      width: 100%;
       border: none;
-      border-radius: 5px;
-      font-weight: bold;
+      border-radius: 6px;
+      font-size: 16px;
       cursor: pointer;
     }
+
     button:hover {
-      background-color: #1798aa;
+      background-color: #16375f;
     }
-    .link {
+
+    footer {
+      background: #0b1e36;
+      color: white;
       text-align: center;
-      margin-top: 15px;
-    }
-    .link a {
-      color: #0b1e36;
-      text-decoration: none;
+      padding: 30px 20px;
+      margin-top: 60px;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -79,28 +93,31 @@
   <h1>Uporia</h1>
   <nav>
     <a href="index.html">Acasă</a>
+    <a href="despre.html">Despre</a>
+    <a href="mentori.html">Mentori</a>
     <a href="devino-mentor.html">Devino Mentor</a>
+    <a href="aplica-elev.html">Aplică Elev</a>
     <a href="inregistrare.html">Înregistrare</a>
     <a href="login.html">Login</a>
   </nav>
 </header>
 
 <div class="container">
-  <h1>Autentificare</h1>
+  <h2>Autentificare</h2>
   <form>
-    <label for="email">Adresă de email</label>
-    <input type="email" id="email" name="email" placeholder="Ex: exemplu@email.com">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
 
     <label for="parola">Parolă</label>
-    <input type="password" id="parola" name="parola" placeholder="••••••••">
+    <input type="password" id="parola" name="parola" required>
 
-    <button type="submit">Autentifică-te</button>
+    <button type="submit">Conectează-te</button>
   </form>
-
-  <div class="link">
-    <p>Nu ai cont? <a href="inregistrare.html">Crează unul</a></p>
-  </div>
 </div>
+
+<footer>
+  &copy; 2025 Uporia. Construit cu pasiune și dedicare. Toate drepturile rezervate.
+</footer>
 
 </body>
 </html>
